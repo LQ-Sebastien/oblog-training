@@ -1,0 +1,37 @@
+{
+	"dependencies": {
+		"cross-env": "^7.0.3",
+		"dotenv": "^16.0.1",
+		"express": "^4.18.1",
+		"joi": "^17.6.0",
+		"node-dev": "^7.4.3",
+		"pg": "^8.7.3"
+	},
+	"name": "data-atelier-oblog-LQ-Sebastien",
+	"description": "Il est temps pour vous de mettre en pratique toutes les bonnes pratiques et les outils que l'on a découvert en ce début de Spé API & Data.",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"dev": "cross-env DEBUG='router' node-dev index.js",
+		"db:init": "bash database/init.sh",
+		"db:seed": "node database/seed.js",
+		"db:create_and_seed": "npm run db:init && npm run db:seed",
+		"db:add_rev": "bash database/add_rev.sh",
+		"test": "jest datamapper --detectOpenHandles"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/LQ-Sebastien/oblog-training"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/LQ-Sebastien/oblog-training/issues"
+	},
+	"homepage": "https://github.com/LQ-Sebastien/oblog-training#readme",
+	"devDependencies": {
+		"debug": "^4.3.4",
+		"jest": "^28.1.1"
+	}
+}

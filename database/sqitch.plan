@@ -1,0 +1,4 @@
+%syntax-version=1.0.0
+%project=oblog_sqitch
+
+oblog_v1 2022-06-16T18:33:13Z LQ Sebastien <Kronik@DESKTOP-P4CFL8H> # Créations des tables
